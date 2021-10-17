@@ -12,7 +12,7 @@
 // ).addTo(map);
 let lat = 0;
 let long = 0;
-navigator.geolocation.getCurrentPosition(
+navigator.geolocation.watchPosition(
   function onSuccess(position) {
     lat = position.coords.latitude;
     long = position.coords.longitude;
